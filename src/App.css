@@ -5,121 +5,159 @@
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   min-height: 100vh;
-  color: #333;
+  color: #1a1a1a;
+  line-height: 1.6;
 }
 
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .container {
   text-align: left;
-  max-width: 500px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  padding: 0 200px;
 }
 
 .header {
-  margin-bottom: 25px;
-  margin-top: auto;
-  text-align: center;
+  margin-bottom: 60px;
+  text-align: left;
 }
 
-.headshot-container {
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: center;
+.greeting {
+  margin-bottom: 8px;
 }
 
-.headshot {
-  width: 120px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 2px solid #e2e8f0;
-  background-color: #f7fafc;
+.greeting p {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 400;
+  margin: 0;
 }
 
 .name {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #2d3748;
-  margin-bottom: 8px;
-  letter-spacing: -0.5px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
-.tagline {
+.connect-cta {
+  margin-bottom: 20px;
+}
+
+.connect-link {
+  color: #e91e63;
+  text-decoration: none;
+  font-weight: 500;
   font-size: 1.1rem;
-  color: #718096;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+
+.connect-link:hover {
+  color: #c2185b;
+  text-decoration: underline;
 }
 
 .main {
-  margin-bottom: 25px;
+  margin-bottom: 60px;
+}
+
+.headshot-container {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.headshot {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dubhacks-image {
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.video-element {
+  width: 500px;
+  height: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  object-fit: cover;
+}
+
+.bio-section {
+  max-width: 100%;
 }
 
 .bio, .clubs, .current {
-  font-size: 1.05rem;
-  line-height: 1.5;
-  color: #4a5568;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
   font-weight: 400;
 }
 
 .bio {
-  margin-bottom: 15px;
+  font-size: 1rem;
+  margin-bottom: 25px;
 }
 
 .clubs {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .current {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
-.current a {
-  color: #000000;
+.current a, .clubs a {
+  color: #e91e63;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
-.current a:hover {
-  text-decoration: underline;
-}
-
-.clubs a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.clubs a:hover {
+.current a:hover, .clubs a:hover {
+  color: #c2185b;
   text-decoration: underline;
 }
 
 .links {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 .social-links {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 16px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -128,80 +166,118 @@ body {
 .link {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  background: white;
-  border: 1px solid #e2e8f0;
-  border-radius: 4px;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
   text-decoration: none;
-  color: #000000;
-  font-weight: 400;
-  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
   transition: all 0.2s ease;
   justify-content: center;
 }
 
 .link:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-color: #cbd5e0;
 }
 
 .icon {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
-.github:hover {
-  border-color: #24292e;
-  color: #24292e;
-}
 
-.linkedin:hover {
-  border-color: #0077b5;
-  color: #0077b5;
-}
-
-.twitter:hover {
-  border-color: #1da1f2;
-  color: #1da1f2;
-}
-
-.instagram:hover {
-  border-color: #e4405f;
-  color: #e4405f;
-}
-
-.email:hover {
-  border-color: #ea4335;
-  color: #ea4335;
-}
 
 .footer {
   margin-top: auto;
-  padding-top: 15px;
-  border-top: 1px solid #e2e8f0;
-  color: #718096;
-  font-size: 0.85rem;
+  padding-top: 30px;
+  border-top: 1px solid #e9ecef;
+  color: #666;
+  font-size: 0.9rem;
   font-weight: 400;
   text-align: center;
 }
 
+.footer-text {
+  margin: 0;
+}
+
+.footer-text a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
+  .App {
+    padding: 30px 15px;
+  }
+  
   .container {
-    padding: 0 15px;
+    padding: 0 60px;
   }
   
   .name {
-    font-size: 1.6rem;
+    font-size: 2.8rem;
   }
   
-  .tagline {
+  .greeting p {
     font-size: 1rem;
   }
   
   .bio, .clubs, .current {
-    font-size: 1.05rem;
+    font-size: 1rem;
+  }
+  
+  .bio {
+    font-size: 1.1rem;
+  }
+  
+  .social-links {
+    gap: 12px;
+  }
+  
+  .link {
+    padding: 5px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .headshot {
+    width: 160px;
+    height: 200px;
+  }
+  
+  .dubhacks-image {
+    width: 160px;
+    height: 200px;
+    margin-left: 15px;
+  }
+  
+  .video-element {
+    width: 160px;
+    height: 200px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 20px 10px;
+  }
+  
+  .container {
+    padding: 0 35px;
+  }
+  
+  .name {
+    font-size: 2.2rem;
   }
   
   .social-links {
@@ -209,22 +285,24 @@ body {
   }
   
   .link {
-    padding: 5px 10px;
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .name {
-    font-size: 1.4rem;
-  }
-  
-  .social-links {
-    gap: 6px;
-  }
-  
-  .link {
     padding: 4px 8px;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+  }
+  
+  .headshot {
+    width: 140px;
+    height: 175px;
+  }
+  
+  .dubhacks-image {
+    width: 140px;
+    height: 175px;
+    margin-left: 12px;
+  }
+  
+  .video-element {
+    width: 140px;
+    height: 175px;
+    margin-left: 12px;
   }
 }
