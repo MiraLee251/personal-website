@@ -17,7 +17,7 @@ function App() {
           </p>
           <p className="clubs">
             At the University of Washington, I'm the Director of Logistics at <a href="https://dubhacks.co/" target="_blank" rel="noopener noreferrer"><em>DubHacks</em></a>, the largest collegiate hackathon in the Pacific Northwest.
-            I'm also the Public Relations Director at <a href="https://gen1.cs.washington.edu/" target="_blank" rel="noopener noreferrer"><em>GEN1</em></a>, a club for for first-generation 
+            I'm also the Public Relations Director at <a href="https://gen1.cs.washington.edu/" target="_blank" rel="noopener noreferrer"><em>GEN1</em></a>, an RSO for first-generation 
             students in the Paul G. Allen School of Computer Science
           </p>
           <p className = "current">
@@ -35,7 +35,7 @@ function App() {
               <a href="https://www.linkedin.com/in/miracle-lee1" target="_blank" rel="noopener noreferrer" className="link linkedin">
                 LinkedIn
               </a>
-              <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="link instagram">
+              <a href="/Miracle Lee's Resume.pdf" target="_blank" rel="noopener noreferrer" className="link resume">
                 Resume
               </a>
               <a href="mailto:ml284@uw.edu" className="link email">
