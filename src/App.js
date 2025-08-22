@@ -49,7 +49,7 @@ function App() {
               <a href="https://www.linkedin.com/in/miracle-lee1" target="_blank" rel="noopener noreferrer" className="link linkedin">
                 LinkedIn
               </a>
-              <a href="/Miracle Lee's Resume.pdf" target="_blank" rel="noopener noreferrer" className="link resume">
+              <a href="/Miracle_Lee_Resume.pdf" target="_blank" rel="noopener noreferrer" className="link resume">
                 Resume
               </a>
               <a href="mailto:ml284@uw.edu" className="link email">
