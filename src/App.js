@@ -57,7 +57,7 @@ function App() {
               </a>
             </div>
           </div>
-          <p className="footer-text">&copy; Made with ❤️ by Miracle Lee | This site is open source on <a href="https://github.com/MiraLee251/personal-website" target="_blank" rel="noopener noreferrer">my GitHub</a></p>
+          <p className="footer-text"> Made with ❤️ by Miracle Lee | This site is open source on <a href="https://github.com/MiraLee251" target="_blank" rel="noopener noreferrer">my GitHub</a></p>
         </footer>
       </div>
     </div>
